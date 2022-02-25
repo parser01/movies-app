@@ -1,0 +1,53 @@
+.range {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.range > div:nth-child(2) {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 0 15px;
+    cursor: grab;
+}
+
+.track {
+    flex: 1 1 auto;
+    height: 2px;
+    border-radius: 5px;
+    background-color: yellow;
+}
+
+.thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+.thumb.nonActive:first-child {
+    transform: translate(-7.5px, -6.5px) !important;
+}
+
+.thumb.nonActive:last-child {
+    transform: translate(1367.3px, -6.5px) !important;
+}
+
+.rangeValue {
+    position: absolute;
+    top: -250%;
+    left: -100%;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.6rem;
+    visibility: hidden;
+}
+
+.showRangeValue {
+    visibility: visible;
+}

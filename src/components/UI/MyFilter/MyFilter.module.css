@@ -1,0 +1,45 @@
+.myFilter {
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+}
+
+.myFilter:last-child {
+    margin-bottom: 0;
+}
+
+.myFilter.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.myFilterTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.myFilterTitle h3 {
+    font-style: italic;
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 992px) {
+    .myFilter {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 136%;
+        right: 0;
+        z-index: 20;
+        min-width: 350px;
+        max-height: 384px;
+        overflow: auto;
+        padding: 15px;
+        border: 2px solid yellow;
+        border-radius: 5px;
+        background-color: #000;
+        transition: visibility .2s ease-in, 
+                    opacity .2s ease-in;
+    }    
+}

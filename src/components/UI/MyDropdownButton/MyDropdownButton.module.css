@@ -1,0 +1,41 @@
+.myDropdownButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    padding: 0 25px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: yellow;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1;
+    transition: border .2s ease-in, color .2s ease-in, 
+                background-color .2s ease-in, 
+                color .2s ease-in;
+}
+
+.myDropdownButton:hover {
+    border: 2px solid yellow;
+    background-color: #000;
+    color: yellow;
+}
+
+.myDropdownButton > div {
+    margin-right: 8px;
+    user-select: none;
+}
+
+.arrowIcon {
+    transition: transform .2s ease-in;
+}
+
+.arrowIcon * {
+    stroke-width: 4;
+}
+
+.myDropdownButton.active .arrowIcon{
+    transform: rotate(-180deg);
+}

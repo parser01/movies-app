@@ -1,0 +1,17 @@
+.filteredMovies {
+    height: 100%;   
+    padding-bottom: 1px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 135px);
+    justify-content: center;
+    gap: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+    }  
+}

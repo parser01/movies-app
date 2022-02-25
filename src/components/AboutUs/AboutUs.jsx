@@ -1,0 +1,17 @@
+import classes from "./AboutUs.module.css";
+
+const AboutUs = () => {
+    return ( 
+        <div className={classes.about}>
+            <div className="section_padding background">
+                <div className="container">
+                    <h2 className="marginBottom">About us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repudiandae eveniet odio neque, maiores ex facere deleniti beatae rerum nesciunt quasi, ut perspiciatis! Voluptatum molestiae reprehenderit odit minima corporis eum rem sapiente quasi autem ea. Inventore quaerat officiis enim? Quos necessitatibus nostrum ipsam beatae dolorem. Commodi excepturi mollitia soluta ipsa, possimus sint id qui molestias rerum, culpa ullam, odio dignissimos vero vitae dolore eveniet! Iure esse ullam asperiores perferendis possimus nesciunt. Doloremque blanditiis fugiat modi quisquam optio cumque mollitia maxime fugit, nulla et hic dolor iste provident. Quo reprehenderit, suscipit porro, aut quae omnis praesentium dolor veritatis possimus quibusdam ipsum dolorum itaque harum mollitia, vitae accusantium necessitatibus in provident ab. Animi excepturi a, at libero debitis mollitia in quaerat consectetur hic, obcaecati enim aspernatur officia reiciendis fugiat. Rerum adipisci impedit quidem recusandae possimus minima mollitia, ipsum sit quaerat earum! Fugit, illo excepturi? A, est? Quibusdam possimus vero impedit suscipit. Expedita odit dolores hic autem, numquam aliquid dolore nisi enim explicabo nesciunt, facere exercitationem recusandae quia earum atque. Et exercitationem, at numquam, tenetur itaque omnis provident est quibusdam aliquid nobis velit, a ea reprehenderit facere ut officiis saepe in repellat quae maxime accusamus quis voluptas. Quis possimus velit qui incidunt unde.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repudiandae eveniet odio neque, maiores ex facere deleniti beatae rerum nesciunt quasi, ut perspiciatis! Voluptatum molestiae reprehenderit odit minima corporis eum rem sapiente quasi autem ea. Inventore quaerat officiis enim? Quos necessitatibus nostrum ipsam beatae dolorem. Commodi excepturi mollitia soluta ipsa, possimus sint id qui molestias rerum, culpa ullam, odio dignissimos vero vitae dolore eveniet! Iure esse ullam asperiores perferendis possimus nesciunt. Doloremque blanditiis fugiat modi quisquam optio cumque mollitia maxime fugit, nulla et hic dolor iste provident. Quo reprehenderit, suscipit porro, aut quae omnis praesentium dolor veritatis possimus quibusdam ipsum dolorum itaque harum mollitia, vitae accusantium necessitatibus in provident ab. Animi excepturi a, at libero debitis mollitia in quaerat consectetur hic, obcaecati enim aspernatur officia reiciendis fugiat. Rerum adipisci impedit quidem recusandae possimus minima mollitia, ipsum sit quaerat earum! Fugit, illo excepturi? A, est? Quibusdam possimus vero impedit suscipit. Expedita odit dolores hic autem, numquam aliquid dolore nisi enim explicabo nesciunt, facere exercitationem recusandae quia earum atque. Et exercitationem, at numquam, tenetur itaque omnis provident est quibusdam aliquid nobis velit, a ea reprehenderit facere ut officiis saepe in repellat quae maxime accusamus quis voluptas. Quis possimus velit qui incidunt unde.</p>
+                </div>
+            </div>
+        </div>
+     );
+}
+ 
+export default AboutUs;

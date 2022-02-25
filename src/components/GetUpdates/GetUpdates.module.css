@@ -1,0 +1,34 @@
+.getUpdates {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    color: #fff;    
+}
+
+.getUpdates h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.getUpdates p {
+    flex: 1 1 auto;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.getUpdates form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.getUpdates form input {
+    flex: 1 1 auto;
+    margin: 0 15px 20px 0;
+}
+
+.getUpdates form button {
+    flex: 0 0 auto;
+}

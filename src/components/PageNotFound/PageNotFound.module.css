@@ -1,0 +1,38 @@
+.pageNotFound {
+    height: 100%;
+    padding-bottom: 1px;
+    
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%); 
+    
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+    
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+    
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#520000', endColorstr='#FF0000', GradientType=0 );
+    
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+    
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%); 
+    
+    text-align: center;
+}
+
+.pageNotFound h2, 
+.pageNotFound p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 992px) { 
+    .pageNotFound h2,
+    .pageNotFound p {
+        font-size: 2.4rem;
+    }     
+}

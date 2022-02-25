@@ -1,0 +1,26 @@
+.footer { 
+    font-size: 1.4rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -25px;
+    text-align: center;
+}
+
+.navigation li {
+    line-height: 1.5;
+    margin: 0 25px 10px;
+}
+
+.copyright {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.copyright p {
+    margin-bottom: 5px;
+}
+

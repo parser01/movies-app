@@ -1,0 +1,102 @@
+.App {
+	position: relative;
+	max-width: 1600px;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+.container {
+	width: 100%;
+	max-width: 1440px;
+	padding: 0 20px;
+	margin: 0 auto; 
+}
+
+.wrapper {
+	position: absolute;	
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+main {
+	flex: 1 1 100%;
+	padding-top: 65px;
+}
+
+main > div {
+	height: 100%;
+}
+
+.background {
+	background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	
+}
+
+.transparentBackground {
+	background: rgba(0, 0, 0, .8);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(67, 67, 67, .8), rgba(0, 0, 0, .8));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(67, 67, 67, .8), rgba(0, 0, 0, .8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */	
+}
+
+.reverseBackground {
+	background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */		
+}
+
+.section_padding {
+	height: 100%;
+	padding: 40px 0;
+}
+
+.marginBottom {
+	margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+	main {
+		padding-top: 82px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	main {
+		padding-top: 130px;
+	}
+
+	.section_padding {
+		padding: 80px 0;
+	}
+
+	.marginBottom {
+		margin-bottom: 50px;
+	}
+}
+
+hr {
+	height: 1px;
+	display: block;
+	    /* ff 3.6+ */
+		background:-moz-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%); 
+ 
+		/* safari 5.1+,chrome 10+ */
+		background:-webkit-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+	 
+		/* opera 11.10+ */
+		background:-o-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+	 
+		/* ie 6-9 */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#520000', endColorstr='#FF0000', GradientType=0 );
+	 
+		/* ie 10+ */
+		background:-ms-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+	 
+		/* global 94%+ browsers support */
+		background:linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+}

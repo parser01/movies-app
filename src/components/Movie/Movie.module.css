@@ -1,0 +1,87 @@
+.movie {
+    height: 100%;
+    padding-bottom: 1px;
+
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#520000', endColorstr='#FF0000', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+}
+
+.movie > div {
+    height: 100%;
+}
+
+.info {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.info > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #434343;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.info > div:nth-child(odd) {
+    background-color: #434343;
+}
+
+.info > div:nth-child(even) {
+    background-color: #000;
+}
+
+.info > div > span:first-child {
+    margin-right: 100px;
+    color: yellow;
+}
+
+.info > div > span:last-child {
+    text-align: right;
+}
+
+.info > div:first-child > span:last-child {
+    font-size: 1.8rem;
+}
+
+.image {
+    width: 272px;
+    height: 400px;
+    margin: 0 auto 30px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    margin-bottom: 35px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+}
+
+.description p {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+

@@ -1,0 +1,35 @@
+.scrollToTopButton {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    right: 5%;
+    bottom: 40px;
+    width: 55px;
+    height: 55px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    z-index: 10;
+    cursor: pointer;
+    background-color: #ffff00;
+    transition: border .2s ease-in, background-color .2s ease-in;
+}
+
+.scrollToTopButton:hover {
+    border: 2px solid #ffff00;
+    background-color: #000;
+}
+
+.scrollToTopButton svg {
+    stroke: #000;
+    transition: stroke .2s ease-in;
+}
+
+.scrollToTopButton:hover svg {
+    stroke: #ffff00;
+}
+
+.scrollToTopButton.visible {
+    display: flex;
+}

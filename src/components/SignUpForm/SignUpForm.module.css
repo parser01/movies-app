@@ -1,0 +1,8 @@
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.signUpForm input {
+    margin-bottom: 20px;
+}

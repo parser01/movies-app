@@ -1,0 +1,52 @@
+.swiper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+.swiper-button-prev {
+    left: 20px;  
+}
+
+.swiper-button-next {
+    right: 20px; 
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 45px;
+    height: 45px;
+    border: 2px solid transparent;
+    border-radius: 25%;
+    user-select: none;
+    background-color: yellow;
+    color: #000;
+    transition: border .2s ease-in,
+                background-color .2s ease-in, 
+                color .2s ease-in;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    border: 2px solid yellow;
+    background-color: #000;
+    color: yellow;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 18px;
+    font-weight: bold;
+}

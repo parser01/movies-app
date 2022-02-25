@@ -1,0 +1,26 @@
+.linkButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    padding: 0 25px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    background-color: #ffff00;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1;
+    transition: border .2s ease-in, 
+                background-color .2s ease-in, 
+                color .2s ease-in;
+}
+
+.linkButton:hover {
+    border: 2px solid yellow;
+    background-color: #000;
+    color: yellow;
+}
+

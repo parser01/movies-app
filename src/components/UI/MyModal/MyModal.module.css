@@ -1,0 +1,61 @@
+.myModal {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .8);
+    transition: visibility .2s ease-in;
+    z-index: 50;
+}
+
+.myModal.active {
+    visibility: visible;
+}
+
+.myModal > div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 5px 5px 50px 15px;
+    border: 2px solid #ffff00;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    transform: scale(0);
+    transition: transform .2s ease-in;
+}
+
+.myModal.active > div {
+    transform: scale(1);
+}
+
+.closeSection {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.closeIcon {
+    cursor: pointer;
+}
+
+.myModal > div > div:last-child {
+    padding-right: 35px;
+}
+
+@media screen and (min-width: 768px) {
+    .myModal > div > div:last-child {
+        padding: 0 35px;
+    }    
+}
+
+@media screen and (min-width: 992px) {
+    .myModal > div {
+        width: 35%;
+    }
+}

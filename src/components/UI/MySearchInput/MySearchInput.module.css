@@ -1,0 +1,117 @@
+.mySearchInput {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 0;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: padding-left 150ms ease-in, 
+                background-color 150ms ease-in;
+}
+
+.mySearchInput.active {
+    width: 100%;
+    padding-left: 7px; 
+    background-color: #fff;
+}
+
+.mySearchInput input {
+    align-self: stretch;
+    width: 0%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.6rem;
+    transition: width 200ms ease-in, 
+                padding-left 200ms ease-in, 
+                padding-right 200ms ease-in;
+}
+
+.mySearchInput.active input {
+     width: 100%;
+     padding-left: 15px;
+     padding-right: 15px;
+}
+
+.searchIcon {
+    stroke: #fff;
+    cursor: pointer;
+}
+
+.searchIcon:hover {
+    stroke: yellow;
+}
+
+.mySearchInput.active .searchIcon {
+    stroke: #000;
+}
+
+.mySearchInput.active .searchIcon:hover {
+    stroke: #434343;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 129%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.dropdown.dropdownActive {
+    display: block;
+}
+
+.dropdown ul {
+    padding: 8px 0;
+    max-height: 390px;
+    overflow: auto;
+    background-color: #fff;
+    font-size: 1.6rem;
+}
+
+.dropdown ul::-webkit-scrollbar-track {
+	background-color: #fff;
+}
+
+.dropdown ul::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background-color: #000;
+}
+
+.dropdown ul::-webkit-scrollbar-thumb:hover {
+	background-color: #434343;
+}
+
+.dropdown a {
+    display: block;
+    padding: 8px 15px;
+    color: #000;
+}
+
+.dropdown a:hover {
+    background-color: #000;
+    color: yellow;
+}
+
+@media screen and (min-width: 992px) {
+    .active {
+        width: auto;
+    }
+
+    .mySearchInput input {
+        width: 0; 
+    }
+
+    .mySearchInput.active input {
+        width: 350px;
+    }
+}
+  

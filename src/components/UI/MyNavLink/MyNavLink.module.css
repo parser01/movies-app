@@ -1,0 +1,82 @@
+.navLink {
+    user-select: none;
+	text-transform: uppercase;
+    color: #fff;
+}
+
+header .navLink,
+footer .navLink {
+    display: block;
+    height: 100%;
+}
+
+header .navLink::after,
+footer .navLink::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width .2s linear;
+}
+
+header .navLink::after {
+    display: none;
+    margin-top: 10px;
+}
+
+footer .navLink::after {
+    display: block;
+    margin-top: 3px;
+}
+
+header .navLink:hover::after,
+footer .navLink:hover::after {
+    width: 100%;
+}
+
+.activeNavLink {
+    color: yellow;
+}
+
+header .activeNavLink::after {
+    width: 100%;
+    background-color: yellow;
+}
+
+footer .activeNavLink::after {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    header .navLink::after {
+        display: block;
+    }
+}
+
+/* Another implementation */ 
+
+/* header .navLink {
+    position: relative;
+}
+
+header .navLink::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width .2s linear;
+}
+
+header .navLink:hover::after {
+    width: 100%;
+} 
+
+header .activeNavLink::after {
+    width: 100%;
+    background-color: yellow;
+    pointer-events: none;
+} */

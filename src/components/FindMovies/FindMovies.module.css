@@ -1,0 +1,107 @@
+.findMovies {
+    margin-top: calc(100vh - 65px); 
+    padding-bottom: 1px;
+
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%); 
+ 
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+ 
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+ 
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#520000', endColorstr='#FF0000', GradientType=0 );
+ 
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+ 
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+}
+
+.title {
+    padding: 1px 0;
+    margin-bottom: 40px;
+
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#520000', endColorstr='#FF0000', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, #FF0000 0%, #FFFF00 50%, #520000 100%); 
+}
+
+.title > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.title > div > div:first-child {
+    width: 200px;
+    padding: 15px 20px 15px 30px;
+    margin-right: 25px;
+    clip-path: polygon(0% 0%, 80% 0, 100% 50%, 80% 100%, 0% 100%);
+    background-color: #ffff00;
+    color: #434343;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.filterIcon {
+    position: relative;
+    z-index: 30;
+    cursor: pointer;
+    font-size: 3.5rem;
+}
+
+.myDropdownFilters {
+    display: none;
+    margin: 0 -5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 135px);
+    justify-content: center;
+    gap: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .findMovies {
+        margin-top: calc(100vh - 82px); 
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+    }   
+}
+
+@media screen and (min-width: 992px) {
+    .findMovies {
+        margin-top: calc(100vh - 130px); 
+    }
+
+    .filterIcon {
+        display: none;
+    }
+
+    .myDropdownFilters {
+        display: flex;
+    }
+}

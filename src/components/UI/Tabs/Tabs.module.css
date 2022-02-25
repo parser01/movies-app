@@ -1,0 +1,40 @@
+.buttons {
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.button {
+    flex: 1 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.button > div {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 5px;
+    visibility: hidden;
+    background-color: #ffff00;
+    transition: visibility .2s ease-in,
+                left .2s ease-in;
+}
+
+.button.activeButton > div {
+    visibility: visible;
+}
+
+.content {
+    display: none;
+}
+
+.content.activeContent {
+    display: block;
+}
