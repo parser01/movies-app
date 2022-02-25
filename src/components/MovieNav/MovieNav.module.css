@@ -17,8 +17,14 @@
     transition: box-shadow 150ms ease-in;
 }
 
-.movieNav:hover::after {
+.movieNav:active::after {
     box-shadow: 0 3px #ffff00;
+}
+
+@media (hover: hover) {
+    .movieNav:hover::after {
+        box-shadow: 0 3px #ffff00;
+    }
 }
 
 .image {
@@ -42,9 +48,16 @@
                 background-color 150ms ease-in;
 }
 
-.movieNav:hover .image > div {
+.movieNav:active .image > div {
     opacity: 1;
     background-color: rgba(0, 0, 0, .7);
+}
+
+@media (hover: hover) {
+    .movieNav:hover .image > div {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, .7);
+    }
 }
 
 .image > div > button {
@@ -77,8 +90,14 @@
     transition: transform 150ms ease-in;
 }
 
-.movieNav:hover .title > div {
+.movieNav:active .title > div {
     transform: translateY(-5px);
+}
+
+@media (hover: hover) {
+    .movieNav:hover .title > div {
+        transform: translateY(-5px);
+    }
 }
 
 @media screen and (min-width: 768px) {

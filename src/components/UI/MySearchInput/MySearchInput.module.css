@@ -43,16 +43,28 @@
     cursor: pointer;
 }
 
-.searchIcon:hover {
+.searchIcon:active {
     stroke: yellow;
+}
+
+@media (hover: hover) {
+    .searchIcon:hover {
+        stroke: yellow;
+    }
 }
 
 .mySearchInput.active .searchIcon {
     stroke: #000;
 }
 
-.mySearchInput.active .searchIcon:hover {
+.mySearchInput.active .searchIcon:active {
     stroke: #434343;
+}
+
+@media (hover: hover) {
+    .mySearchInput.active .searchIcon:hover {
+        stroke: #434343;
+    }
 }
 
 .dropdown {
@@ -96,9 +108,16 @@
     color: #000;
 }
 
-.dropdown a:hover {
+.dropdown a:active {
     background-color: #000;
     color: yellow;
+}
+
+@media (hover: hover) {
+    .dropdown a:hover {
+        background-color: #000;
+        color: yellow;
+    }
 }
 
 @media screen and (min-width: 992px) {

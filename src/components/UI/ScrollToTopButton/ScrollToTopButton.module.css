@@ -17,9 +17,16 @@
                 background-color 150ms ease-in;
 }
 
-.scrollToTopButton:hover {
+.scrollToTopButton:active {
     border: 2px solid #ffff00;
     background-color: #000;
+}
+
+@media (hover: hover) {
+    .scrollToTopButton:hover {
+        border: 2px solid #ffff00;
+        background-color: #000;
+    }
 }
 
 .scrollToTopButton svg {
@@ -27,9 +34,21 @@
     transition: stroke 150ms ease-in;
 }
 
-.scrollToTopButton:hover svg {
+.scrollToTopButton:active svg {
     stroke: #ffff00;
 }
+
+@media (hover: hover) {
+    .scrollToTopButton:hover svg {
+        stroke: #ffff00;
+    }
+}
+
+/* @media screen and (hover: hover) {
+    .scrollToTopButton:hover svg {
+        stroke: #ffff00;
+    }
+} */
 
 .scrollToTopButton.visible {
     display: flex;

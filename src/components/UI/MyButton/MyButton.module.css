@@ -15,10 +15,18 @@
                 color 150ms ease-in;
 }
 
-.myButton:hover {
+.myButton:active {
     border: 2px solid yellow;
     background-color: #000;
     color: yellow;
+}
+
+@media (hover: hover) {
+    .myButton:hover {
+        border: 2px solid yellow;
+        background-color: #000;
+        color: yellow;
+    }
 }
 
 

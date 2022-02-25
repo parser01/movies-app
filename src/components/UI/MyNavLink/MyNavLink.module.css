@@ -29,9 +29,16 @@ footer .navLink::after {
     margin-top: 3px;
 }
 
-header .navLink:hover::after,
-footer .navLink:hover::after {
+header .navLink:active::after,
+footer .navLink:active::after {
     width: 100%;
+}
+
+@media (hover: hover) {
+    header .navLink:hover::after,
+    footer .navLink:hover::after {
+        width: 100%;
+    }
 }
 
 .activeNavLink {

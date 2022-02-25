@@ -38,11 +38,20 @@
                 color 150ms ease-in;
 }
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
+.swiper-button-prev:active,
+.swiper-button-next:active {
     border: 2px solid yellow;
     background-color: #000;
     color: yellow;
+}
+
+@media (hover: hover) {
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        border: 2px solid yellow;
+        background-color: #000;
+        color: yellow;
+    }
 }
 
 .swiper-button-prev::after,

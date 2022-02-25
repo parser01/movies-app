@@ -18,9 +18,17 @@
                 color 150ms ease-in;
 }
 
-.linkButton:hover {
+.linkButton:active {
     border: 2px solid yellow;
     background-color: #000;
     color: yellow;
+}
+
+@media (hover: hover) {
+    .linkButton:hover {
+        border: 2px solid yellow;
+        background-color: #000;
+        color: yellow;
+    }
 }
 
