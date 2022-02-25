@@ -1,5 +1,6 @@
 .myModal {
     visibility: hidden;
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,12 +10,14 @@
     bottom: 0;
     right: 0;
     background-color: rgba(0, 0, 0, .8);
-    transition: visibility 150ms ease-in;
+    transition: visibility 150ms ease-in,
+                opacity 0s ease-in;
     z-index: 50;
 }
 
 .myModal.active {
     visibility: visible;
+    opacity: 1;
 }
 
 .myModal > div {
