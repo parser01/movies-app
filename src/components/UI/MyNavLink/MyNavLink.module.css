@@ -16,7 +16,7 @@ footer .navLink::after {
     width: 0%;
     height: 2px;
     background-color: #fff;
-    transition: width .2s linear;
+    transition: width 150ms linear;
 }
 
 header .navLink::after {
@@ -68,7 +68,7 @@ header .navLink::after {
     width: 0%;
     height: 2px;
     background-color: #fff;
-    transition: width .2s linear;
+    transition: width 150ms linear;
 }
 
 header .navLink:hover::after {

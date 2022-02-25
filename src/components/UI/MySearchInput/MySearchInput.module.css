@@ -27,9 +27,9 @@
     background-color: #fff;
     color: #000;
     font-size: 1.6rem;
-    transition: width 200ms ease-in, 
-                padding-left 200ms ease-in, 
-                padding-right 200ms ease-in;
+    transition: width 150ms ease-in, 
+                padding-left 150ms ease-in, 
+                padding-right 150ms ease-in;
 }
 
 .mySearchInput.active input {

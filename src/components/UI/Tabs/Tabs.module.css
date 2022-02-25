@@ -23,8 +23,8 @@
     height: 5px;
     visibility: hidden;
     background-color: #ffff00;
-    transition: visibility .2s ease-in,
-                left .2s ease-in;
+    transition: visibility 150ms ease-in,
+                left 150ms ease-in;
 }
 
 .button.activeButton > div {

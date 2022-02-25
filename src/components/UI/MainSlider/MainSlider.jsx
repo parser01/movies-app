@@ -28,7 +28,7 @@ const MainSlider = () => {
     return (
         <Swiper
             modules={[Navigation, EffectCube]}
-            speed={1000}
+            speed={200}
             navigation
             loop={true}
             // effect="cube"

@@ -13,7 +13,8 @@
     z-index: 10;
     cursor: pointer;
     background-color: #ffff00;
-    transition: border .2s ease-in, background-color .2s ease-in;
+    transition: border 150ms ease-in, 
+                background-color 150ms ease-in;
 }
 
 .scrollToTopButton:hover {
@@ -23,7 +24,7 @@
 
 .scrollToTopButton svg {
     stroke: #000;
-    transition: stroke .2s ease-in;
+    transition: stroke 150ms ease-in;
 }
 
 .scrollToTopButton:hover svg {

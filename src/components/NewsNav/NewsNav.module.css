@@ -22,7 +22,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: top .2s ease-in;
+    transition: top 150ms ease-in;
 }
 
 .image img:last-child {
@@ -32,7 +32,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: top .2s ease-in;
+    transition: top 150ms ease-in;
 }
 
 .newsNav:hover .image img:first-child {

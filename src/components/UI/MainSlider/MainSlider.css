@@ -33,9 +33,9 @@
     user-select: none;
     background-color: yellow;
     color: #000;
-    transition: border .2s ease-in,
-                background-color .2s ease-in, 
-                color .2s ease-in;
+    transition: border 150ms ease-in,
+                background-color 150ms ease-in, 
+                color 150ms ease-in;
 }
 
 .swiper-button-prev:hover,

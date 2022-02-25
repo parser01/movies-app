@@ -39,7 +39,7 @@
         border: 2px solid yellow;
         border-radius: 5px;
         background-color: #000;
-        transition: visibility .2s ease-in, 
-                    opacity .2s ease-in;
+        transition: visibility 150ms ease-in, 
+                    opacity 150ms ease-in;
     }    
 }

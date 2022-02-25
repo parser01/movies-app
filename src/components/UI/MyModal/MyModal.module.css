@@ -9,7 +9,7 @@
     bottom: 0;
     right: 0;
     background-color: rgba(0, 0, 0, .8);
-    transition: visibility .2s ease-in;
+    transition: visibility 150ms ease-in;
     z-index: 50;
 }
 
@@ -27,7 +27,7 @@
     background-color: #000;
     color: #fff;
     transform: scale(0);
-    transition: transform .2s ease-in;
+    transition: transform 150ms ease-in;
 }
 
 .myModal.active > div {
